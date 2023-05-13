@@ -1,4 +1,4 @@
-We could visualize two different pictures for rate limiting. Consider the followings written using pseudo-code.
+We could visualize two different pictures for rate limiting. Consider the followings written using pseudo-code:
 
 ```
 #
@@ -19,7 +19,7 @@ fn handle_request(req, res){
             (res) => res.wite(res)
         )
     }else{
-        // Do something to handle deletion
+        // Do something to handle rejection
     }
 }
 
@@ -43,7 +43,7 @@ fn handle_request(req, res){
     if should_accept(req){
         send_request_upstream(req)
     }else{
-        // Do something to handle deletion
+        // Do something to handle rejection
     }
 }
 
